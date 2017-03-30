@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/mainBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:clickable="true"
+            android:gravity="center"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp">
+
+            <TableRow
+                android:id="@+id/row0"
+                style="@style/TableRow">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:layout_column="0">
+
+                </TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:layout_column="1">
+
+                </TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:layout_column="2">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                style="@style/TableRow">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:layout_column="0">
+
+                </TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:layout_column="1">
+
+                </TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:layout_column="2">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                style="@style/TableRow">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:layout_column="0">
+
+                </TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:layout_column="1">
+
+                </TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:layout_column="2">
+
+                </TextView>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/turn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Turn: "
+            android:textColor="@color/red"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Again" />
+
+
+    </LinearLayout>
+</LinearLayout>
